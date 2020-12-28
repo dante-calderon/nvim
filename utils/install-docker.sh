@@ -23,7 +23,7 @@ installnode() { \
   [  -n "$(uname -a | grep Ubuntu)" ] && installnodeubuntu
   [ -f "/etc/arch-release" ] && installnodearch
   [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ] && echo "Windows not currently supported"
-  sudo npm i -g neovim
+  npm i -g neovim
 }
 
 installpiponmac() { \
